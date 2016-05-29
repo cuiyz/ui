@@ -1929,64 +1929,64 @@ machine:
     close: 关闭
 
   driverDigitalocean:
-    accountSection: Account Access
+    accountSection: 账户访问
     accessToken:
-      label: Access Token*
-      placeholder: Your DigitalOcean API access token
+      label: 访问令牌
+      placeholder: 你的 DigitalOcean API 访问令牌
       help: |
-        A Personal Access Token from the DigitalOcean
-        <a href="https://cloud.digitalocean.com/settings/applications" target="_blank">Apps & API</a> screen
-    instanceSection: Instance
+        个人的DigitalOcean访问令牌
+        <a href="https://cloud.digitalocean.com/settings/applications" target="_blank">服务和API</a>
+    instanceSection: 接口
     image:
-      label: Image
+      label: 镜像
     size:
-      label: Size
-    regionSection: Region
+      label: 大小
+    regionSection: 区域
     region:
-      label: Region
-    optionsSection: Options
+      label: 区域
+    optionsSection: 选项
     backups:
-      label: Enable Backups
+      label: 开启备份
     ipv6:
-      label: Enable IPv6
+      label: 开启IPv6
     privateNetworking:
-      label: Enable Private Networking
+      label: 开启私有网络
 
   driverExoscale:
-    accountSection: Account Access
+    accountSection: 账户访问
     apiKey:
-      label: API Key
-      placeholder: Your Exoscale API Key
+      label: API密钥
+      placeholder: 你的 Exoscale API 密钥
     secretKey:
-      label: Secret Key
-      placeholder: Your Exoscale secret key
-      provided: Provided
-    accountHelp: Paste in your Exoscale key pair here.  We'll use this key to create your new Instances.
-    loginAction: "Next: Authenticate & select a Security Group"
-    loadingSecurity: Loading security group info from Exoscale...
-    securityGroupSection: Security Group
+      label: 密钥
+      placeholder: 你的 Exoscale密钥
+      provided: 提供
+    accountHelp: 将你的Exoscale密钥粘贴的这里.  我们会用密钥创建一个实例
+    loginAction: "下一步:认证并且选择一个安全组"
+    loadingSecurity: 从Exoscale中加载安全组
+    securityGroupSection: 安全组
     securityGroup:
-      label: Security Group
-      defaultExisting: "Standard: Use the existing <code>{groupName}</code> group"
-      defaultCreate: "Standard: Automatically create a <code>{groupName}</code> group"
-      custom: "Custom: Choose an existing group"
-      updating: Updating Security Group...
-      creating: Creating Security Group...
+      label: 安全组
+      defaultExisting: "选择已有的安全组"
+      defaultCreate: "自动创建一个安全组"
+      custom: "选择已有的安全组"
+      updating: 更新安全组
+      creating: 创建安全组
     portHelp:
-      link: Learn more
-      text: about the ports that will be opened.
+      link: 学习更多
+      text: 将要打开的端口
     needs:
-      label: "For {appName} to work correctly your security group will need to allow traffic:"
-      item1: From the {appName} server to <code>TCP</code> port <code>22</code> <span class="text-muted">(SSH to install and configure Docker)</span>
-      item2: From and To all other hosts on <code>UDP</code> ports <code>500</code> and <code>4500</code> <span class="text-muted">(for IPsec networking)</span></li>
-      item3: These rules will <b>not</b> be added automatically.
-    selectSecurityGroupAction: "Next: Set Instance options"
-    loadingInstance: Fetching available Instance settings...
-    instanceSection: Instance
+      label: "为了{appName}正确的运行 你的安全组需要允许通信"
+      item1: 从{appName}服务的<code>TCP</code>端口<code>22</code> <span class="text-muted">(通过ssh来安装和配置Docker)</span>
+      item2: 其他服务的<code>UDP</code>端口<code>500</code>和<code>4500</code> <span class="text-muted">为了IPsec网络连接</span></li>
+      item3: 这些规则<b>不会</b>自动的添加.
+    selectSecurityGroupAction: 下一步设置实例
+    loadingInstance: 获得实例设置
+    instanceSection: 实例
     instanceProfile:
-      label: Instance Profile
+      label: 实例 Profile
     diskSize:
-      label: Root Size
+      label: 根的大小
 
 
   driverOther:
