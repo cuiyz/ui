@@ -1879,54 +1879,54 @@ machine:
       label: Use only private IP address
 
   driverAzure:
-    accountAccessSection: Account Access
+    accountAccessSection: 账户访问
     username:
-      label: Username
-      placeholder: Your Azure account username
+      label: 用户名称
+      placeholder: 你的 Azure 账户名称
     password:
-      label: Password
-      placeholder: Your Azure account password
+      label: 密码
+      placeholder: 你的 Azure 账户密码
     subscriptionId:
-      label: Subscription ID
-      placeholder: Your Azure subscription ID
+      label: 订阅 ID
+      placeholder: 你的 Azure 订阅ID
     subscriptionCert:
-      label: Subscription Cert
-      placeholder: Your Azure subscription certificate
-    instanceSection: Instance
+      label: 订阅凭证
+      placeholder: 你的 Azure 订阅凭证
+    instanceSection: 实例
     image:
-      label: Image
+      label: 镜像
       placeholder: Ubuntu 15.10 x64
     size:
-      label: Size
+      label: 大小
     sshPort:
-      label: SSH Port
-      placeholder: e.g. 22
+      label: SSH 端口
+      placeholder: 例如 22
     dockerPort:
-      label: Docker Port
-      placeholder: e.g. 2376
+      label: Docker 端口
+      placeholder: 例如 2376
     dockerSwarm:
-      label: Docker Swarm Master Port
-      placeholder: e.g. 3376
+      label: 主Docker Swarm 端口
+      placeholder: 例如 3376
     publishSettingsFile:
-      label: Publish Settings
-      placeholder: Your Publish Settings file
-    regionSection: Region
+      label: 设置
+      placeholder: 你的设置文件
+    regionSection: 区域
     region:
-      label: Region
+      label: 区域
 
   driverCustom:
-    step1: Start up a Linux machine somewhere and install the latest version of <a href="http://www.docker.com/" target="_blank">Docker</a> on it.
-    step2: "Make sure any security groups or firewalls allow traffic:"
+    step1: 启动机器并在上面安装最近版本的<a href="http://www.docker.com/" target="_blank">Docker</a>
+    step2: 确定安全组和防火墙允许通信
     step2li: From and To all other hosts on <code>UDP</code> ports <code>500</code> and <code>4500</code> <span class="text-muted">(for IPsec networking)</span>
-    step3: "Optional: Add labels to be applied to the host."
-    step4: "Optional: Specify the public IP that should be used for this host.  This is required if you're trying to add the host the <code>rancher/server</code> container is on."
-    step5Copy: Copy, paste, and run the command below to register the host with
-    generating: Generating registration URL...
+    step3: "可项: 为机器添加标签"
+    step4: "可选: 为机器指明公网IP.  This is required if you're trying to add the host the <code>rancher/server</code> container is on."
+    step5Copy: 复制粘贴在注册的机器下运行命令
+    generating: 生成注册URL
     step5Close:
-      part1: Click close below.  The new host should pop up on the
-      link: Hosts
-      part2: screen within a minute.
-    close: Close
+      part1: 点击关闭，新的主机会弹出。
+      link: 主机
+      part2: 一分钟内会显示信息
+    close: 关闭
 
   driverDigitalocean:
     accountSection: Account Access
