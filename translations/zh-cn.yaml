@@ -1990,207 +1990,207 @@ machine:
 
 
   driverOther:
-    driverSection: Driver
+    driverSection: 驱动
     driver:
-      label: Driver
-    optionsSection: "{driverName} Options"
+      label: 驱动
+    optionsSection: "{driverName} 设置"
 
   driverPacket:
-    accountSection: Account Access
+    accountSection: 账户访问
     projectId:
-      label: Project
-      placeholder: Your Packet project ID
+      label: 项目
+      placeholder: 你的项目ID
     apiKey:
-      label: API Key
-      placeholder: Your Packet API key
-    apiKeyHelp: From the Packet <a href="https://app.packet.net/portal#/api-keys" target="_blank">API Keys</a> screen
-    instanceSection: Instance
+      label: API 密钥
+      placeholder: 你的包API密钥
+    apiKeyHelp: 包<a href="https://app.packet.net/portal#/api-keys" target="_blank">API 密钥</a>
+    instanceSection: 实例
     image:
-      label: Image
+      label: 镜像
     size:
-      label: Size
-    regionSection: Region
+      label: 大小
+    regionSection: 区域
     region:
-      label: Region
+      label: 区域
 
   driverRackspace:
-    accountSection: Account Access
+    accountSection: 用户访问
     username:
-      label: Username
-      placeholder: Your RackSpace username
+      label: 用户名
+      placeholder: 你的RackSpace用户名
     apiKey:
-      label: API Key
-      placeholder: Your RackSpace API key
-    accountHelp: From the Account Settings screen of the RackSpace control panel
-    regionSection: Region
+      label: API密钥
+      placeholder: 你的 RackSpace API 密钥
+    accountHelp: RackSpace控制面板
+    regionSection: 区域
     region:
-      label: Region
-    instanceSection: Instance
+      label: 区域
+    instanceSection: 实例
     flavor:
-      label: Flavor
+      label: 类型
 
   driverUbiquity:
-    accountSection: Account Access
+    accountSection: 用户访问
     clientId:
       label: Reseller ID
-      placeholder: Your Ubiquity Hosting API Reseller ID
+      placeholder: 你的 API Reseller ID
     apiUsername:
-      label: Remote ID
-      placeholder: Your Ubiquity Hosting Remote ID
+      label: 远程 ID
+      placeholder: 你的 Remote ID
     apiToken:
-      label: Access Key
-      placeholder: Your Ubiquity Hosting Access Key
-      provided: Provided
-    accountHelp: You can find your Ubiquity Hosting API credentials <a href="https://motion.ubiquityhosting.com/api">here</a>. Don't have an account? Learn more about <a href="http://www.ubiquityhosting.com/">Ubiquity Hosting</a> today!
-    loginAction: "Next: Authenticate & Create a New Cloud Instance"
-    loadingInstance: Loading cloud instance creation details...
-    instanceSection: Instance
-    regionSection: Region
+      label: 访问密钥
+      placeholder: 提供
+      provided: 提供
+    accountHelp: 你可以<a href="https://motion.ubiquityhosting.com/api">在这里</a>找到你的Ubiquity Hosting API 认证  没有账户? 了解更多 <a href="http://www.ubiquityhosting.com/">Ubiquity Hosting</a> 
+    loginAction: "下一步: 认证并且创建一个云实例"
+    loadingInstance: 加载创建实例的过程
+    instanceSection: 实例
+    regionSection: 区域
     region:
-      label: Region
+      label: 区域
     image:
-      label: Image
+      label: 镜像
     flavor:
-      label: Flavor
+      label: 类型
 
   driverVsphere:
-    accountSection: Account Access
+    accountSection: 用户访问
     vcenter:
-      label: vCenter Host
-      placeholder: vCenter or ESXi hostname/IP
+      label: 虚拟中心主机
+      placeholder: 虚拟中心 主机名/IP
     vcenterPort:
-      label: vCenter Port
+      label: 虚拟中心端口
     username:
-      label: Username
+      label: 用户名
     password:
-      label: Password
-    instanceSection: Instance
+      label: 密码
+    instanceSection: 实例
     cpuCount:
-      label: CPUs
+      label: 处理器
     memorySize:
-      label: Memory
+      label: 内存
       unit: MB
     diskSize:
-      label: Disk
+      label: 硬盘
       unit: MB
     boot2dockerUrl:
-      label: OS ISO URL
-      placeholder: "Default: Latest boot2docker image"
-    schedulingSection: Scheduling
+      label: 操作系统 ISO URL
+      placeholder: "默认: 最近的 boot2docker 镜像"
+    schedulingSection: 计划
     dataCenter:
-      label: Data Center
+      label: 数据中心
     pool:
-      label: Pool
+      label: 资源池
     host:
-      label: Host
-      placeholder: "Use '/' if using a cluster"
+      label: 主机
+      placeholder: "使用 '/' 是否使用云"
     network:
-      label: Network
+      label: 网络
     dataStore:
-      label: Data Store
+      label: 数据存储
 
 machineDriverSettings:
-  header: Machine Drivers
-  subtext: "Additional <code>docker-machine</code> drivers can be loaded here and used in the Add Host screen."
-  add: Add Machine Driver
-  builtin: Built-In
-  other: Other
+  header: 机器驱动
+  subtext: "在这里加载额外的 <code>docker主机</code> 驱动 用于添加主机"
+  add: 添加机器驱动
+  builtin: 内置
+  other: 其他
   table:
     header:
-      state: State
-      name: Name
-      url: Driver URL
+      state: 状态
+      name: 名称
+      url: 驱动 URL
       uiUrl: UI URL
-      checksum: Checksum
-    noData: You have no Machine Drivers
+      checksum: 校验
+    noData: 你没有主机驱动
 
 modalAboutComponent:
-  component: Component
-  version: Version
-  cattle: Cattle
-  ui: User Interface
-  compose: Compose
-  machineService: Machine Service
-  docerkMachine: docker-machine
-  close: Close
+  component: 组件
+  version: 版本
+  cattle: 调度框架
+  ui: 接口
+  compose: 组成
+  machineService: 主机服务
+  docerkMachine: docker主机
+  close: 关闭
 
 modalAuditlogInfo:
-  header: Additional Log Info
-  request: "Request Object:"
-  response: "Response Object:"
-  closer: Close
+  header: 日志信息
+  request: "请求对象:"
+  response: "响应对象"
+  closer: 关闭
 
 modalConfirmDeactiviate:
-  header: Are you sure you want to
-  protip: "ProTip: Hold the {alternateLabel} key while clicking {isServiceButton} to bypass this confirmation."
-  cancel: Cancel
+  header: 你确定吗?
+  protip: "当点击{isServiceButton}时保管 {alternateLabel} 密钥"
+  cancel: 取消
 
 modalEditDriver:
   header:
-    create: Add Machine Driver
-    edit: Edit Machine Driver
+    create: 添加机器驱动
+    edit: 编辑机器驱动
   url:
-    label: Download URL
-    help: The URL to download the machine driver binary 64-bit Linux.
+    label: 下载URL
+    help: 下载主机驱动 binary 64-bit Linux的URL
   uiUrl:
-    label: Custom UI URL
-    help: "Optional: The URL to load for customized Add Hosts screen for this driver."
-    link: See <a href="https://github.com/rancher/ui-driver-skel" target="_blank">ui-driver-skel</a> for more info.
+    label: 定制UI的URL
+    help: "加载应用的URL"
+    link: 查看<a href="https://github.com/rancher/ui-driver-skel" target="_blank">ui-driver-skel</a>获得更多信息。
   checksum:
-    label: Checksum
-    help: "Optional: Verify that the downloaded driver matches the expected checksum."
+    label: 校验
+    help: "Optional: 检查下载的驱动是否符合校验"
 
 modalProcessError:
-  header: Exception Info
-  cause: "Cause:"
+  header: 异常信息
+  cause: "原因:"
   none: N/A
-  stackTrace: "Stack Trace:"
-  close: Close
+  stackTrace: "堆栈信息:"
+  close: 关闭
 
 modalShell:
-  title: "Shell: {instanceName}"
+  title: "脚本: {instanceName}"
 
 newAliasService:
-  header: Add Service Alias
+  header: 添加服务别名
 
 newBalancer:
-  header: Add Load Balancer
+  header: 添加负载均衡
   note: |
-    <p><strong>Note:</strong> Requests that do not match any of the &quot;advanced request options&quot; will be sent to the <strong>all</strong> ({targetResources}) of the configured target services (round-robin) on the default target port corresponding to the source port of the request.</p>
+    <p>不匹配设置的请求会被采用round-robin的方式发送到配置的目标服务的默认目标端口上</p>
   tabs:
-    ssl: SSL Termination
+    ssl: SSL 控制台
     stickiness: Stickiness
-    custom: Custom haproxy.cfg
-    labels: Labels
-    scheduling: Scheduling
+    custom: 定制 haproxy.cfg
+    labels: 标签
+    scheduling: 调度
   helpBlock: |
-    <p class="help-block">Additional <a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html" target="_blank">haproxy.cfg</a> configuration can be put here and will be appended to the configuration generated by {appName}.</p>
-  labelGlobal: <code>global</code> section
-  labelDefault: <code>defaults</code> section
+    <p class="help-block">额外的 <a href="http://cbonte.github.io/haproxy-dconv/configuration-1.5.html" target="_blank">haproxy.cfg</a>配置可以放在这里并且将会追加到{appName}产生的配置文件上。</p>
+  labelGlobal: <code>全局</code> section
+  labelDefault: <code>默认</code> section
 
 
 newCatalog:
   version:
-    prompt: Choose a version...
-  saveUpgrade: Upgrade
-  saveNew: Launch
-  upgrade: "Upgrade:"
-  catalog: "Catalog:"
-  category: "Category:"
-  support: "Support:"
-  official: Officially Certified
-  maintainedBy: Maintained by community members
-  maintainer: "Maintainer:"
-  license: "License:"
-  url: "Project URL:"
-  stack: Stack
-  templateVersion: Template Version
-  selectVersion: Select a version of the template to
-  newStack: New Stack
-  config: Configuration Options
-  unknownType: "Unrecognized question type:"
-  startService: Start services after creating
-  preview: Preview
+    prompt: 选择一个版本
+  saveUpgrade: 升级
+  saveNew: 创建
+  upgrade: "升级:"
+  catalog: "目录:"
+  category: "类别:"
+  support: "支持:"
+  official: 官方认证
+  maintainedBy: 由community 成员维护
+  maintainer: "维护人:"
+  license: "许可证:"
+  url: "项目 URL:"
+  stack: 堆栈
+  templateVersion: 模板版本
+  selectVersion:选择一个模板版本
+  newStack: 堆栈
+  config: 配置
+  unknownType: "无法识别的问题类型:"
+  startService: 创建完成后启动服务
+  preview: 预览
   txt: answers.txt
 
 newContainer:
@@ -2200,41 +2200,41 @@ newContainer:
       other {Services}
     }
   tabs:
-    disks: Disks
-    userData: User Data
-    command: Command
-    volumes: Volumes
-    networking: Networking
-    security: Security/Host
-    healthCheck: Health Check
-    labels: Labels
-    scheduling: Scheduling
-  selectUpgrade: Select one or more services to upgrade.
-  saveUpgrade: Upgrade
-  saveNew: Create
-  removeSidekick: Remove this Sidekick
+    disks: 硬盘
+    userData: 用户数据
+    command: 命令行
+    volumes: 硬盘
+    networking: 网络
+    security: 安全
+    healthCheck: 健康检查
+    labels: 标签
+    scheduling: 调度
+  selectUpgrade: 选择一个或多个服务启动
+  saveUpgrade: 升级
+  saveNew: 创建
+  removeSidekick: 删除这个Sidekick
   name:
-    placeholder: e.g. myapp
+    placeholder: 比如 我的应用
   description:
-    placeholder: e.g. My Application
+    placeholder: 比如 我的应用
   emptyPrimaryService: "(Primary Service)"
   emptySidekick: "(Sidekick #{num})"
-  addSidekickContainer: Add Sidekick Container
-  addSidekickVm: Add Sidekick VM
+  addSidekickContainer: 添加 Sidekick 容器
+  addSidekickVm: 添加 Sidekick 虚机
 
 newExternalService:
-  header: Add External Service
-  alert: "Note: This will only be used if the external service is a target of a load balancer."
+  header: 添加额外的服务
+  alert: "备注:如果这个额外的服务是负载均衡的目标那么它会被启用"
 
 pageFooter:
-  notARelease: (Not a Release)
-  help: Help
-  documentation: Documentation
+  notARelease: (不是一个释放的版本)
+  help: 帮助
+  documentation: 文档
   faq: FAQs
-  issues: File an Issue
-  forums: Forums
+  issues: 提出问题
+  forums: 论坛
   download:
-    link: Download CLI
+    link: 下载 CLI
     mac: Mac OS X
     windows: Windows
     linux: Linux
